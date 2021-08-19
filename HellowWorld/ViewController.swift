@@ -21,11 +21,7 @@ class ViewController: UIViewController {
     @IBAction func showTextButtonAction() {
         halloWorldLabel.isHidden.toggle()
         
-        if halloWorldLabel.isHidden {
-            showTextButtonLabel.setTitle("Show Text", for: .normal)
-        } else {
-            showTextButtonLabel.setTitle("Hide Text", for: .normal)
-        }
+        halloWorldLabel.isHidden ? showTextButtonLabel.setTitle("Show Text", for: .normal) : showTextButtonLabel.setTitle("Hide Text", for: .normal)
     }
     
 }
